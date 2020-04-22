@@ -81,8 +81,8 @@ void FusionEKF::ProcessMeasurement(const MeasurementPackage &measurement_pack) {
       // TODO: Convert radar from polar to cartesian coordinates 
       //         and initialize state.
       float rho = measurement_pack.raw_measurements_[0]; // range
-  	  float phi = measurement_pack.raw_measurements_[1]; // bearing
-  	  float rho_dot = measurement_pack.raw_measurements_[2]; // radial velocity 
+      float phi = measurement_pack.raw_measurements_[1]; // bearing
+      float rho_dot = measurement_pack.raw_measurements_[2]; // radial velocity 
       
       float px = rho*cos(phi);
       float py = rho*sin(phi);
